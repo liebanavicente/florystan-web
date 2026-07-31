@@ -4,64 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Construcciones Florystan — Reformas integrales y construcción de alto nivel en Madrid." />
-    <title>Construcciones Florystan — Sitio en construcción</title>
+    <title>Construcciones Florystan — Espacios que permanecen</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-DVfZPmKE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BanasJvZ.css">
     <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #0f0e0c;
-        --fg: #f2ede6;
-        --muted: #a89f92;
-      }
-      * { box-sizing: border-box; }
-      html, body {
-        margin: 0;
-        height: 100%;
-      }
-      body {
-        background: var(--bg);
-        color: var(--fg);
+      #construction-banner {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        padding: 0.6rem 1rem;
+        background: #0f0e0c;
+        color: #f2ede6;
         font-family: "Inter", system-ui, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
+        font-size: 0.9rem;
         text-align: center;
-        padding: 2rem;
-      }
-      .logo {
-        width: 96px;
-        height: auto;
-        margin-bottom: 2rem;
-        opacity: 0.95;
-      }
-      h1 {
-        font-family: "Fraunces", serif;
-        font-style: italic;
-        font-weight: 400;
-        font-size: clamp(1.75rem, 5vw, 3rem);
-        margin: 0 0 0.75rem;
-        letter-spacing: 0.01em;
-      }
-      p {
-        color: var(--muted);
-        font-size: clamp(0.95rem, 2vw, 1.15rem);
-        margin: 0;
-        max-width: 32rem;
-      }
-      .emoji {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(242, 237, 230, 0.15);
       }
     </style>
   </head>
   <body>
-    <img class="logo" src="./images/logo.png" alt="Construcciones Florystan" />
-    <div class="emoji">🚧</div>
-    <h1>Estamos construyendo algo nuevo</h1>
-    <p>Nuestra web está en construcción. Muy pronto podrás ver aquí todo lo que Construcciones Florystan tiene preparado.</p>
+    <div id="construction-banner">🚧 Esta web está en construcción — algunos contenidos pueden cambiar próximamente.</div>
+    <div id="root"></div>
   </body>
 </html>
