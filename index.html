@@ -14,22 +14,48 @@
     <link rel="stylesheet" crossorigin href="./assets/index-BanasJvZ.css">
     <style>
       #construction-banner {
-        position: sticky;
-        top: 0;
+        position: fixed;
+        left: 50%;
+        bottom: 1.25rem;
+        transform: translateX(-50%);
         z-index: 9999;
-        width: 100%;
-        padding: 0.6rem 1rem;
-        background: #0f0e0c;
-        color: #f2ede6;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        background: rgba(15, 14, 12, 0.55);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(242, 237, 230, 0.15);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        color: rgba(242, 237, 230, 0.85);
         font-family: "Inter", system-ui, sans-serif;
-        font-size: 0.9rem;
-        text-align: center;
-        border-bottom: 1px solid rgba(242, 237, 230, 0.15);
+        font-size: 0.78rem;
+        letter-spacing: 0.01em;
+        white-space: nowrap;
+        pointer-events: none;
+      }
+      #construction-banner .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #e0a95f;
+        flex: none;
+      }
+      @media (max-width: 640px) {
+        #construction-banner {
+          font-size: 0.7rem;
+          padding: 0.45rem 0.85rem;
+          white-space: normal;
+          text-align: center;
+          max-width: 90vw;
+        }
       }
     </style>
   </head>
   <body>
-    <div id="construction-banner">🚧 Esta web está en construcción — algunos contenidos pueden cambiar próximamente.</div>
+    <div id="construction-banner"><span class="dot"></span>Web en construcción</div>
     <div id="root"></div>
   </body>
 </html>
